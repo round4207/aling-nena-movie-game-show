@@ -1,6 +1,6 @@
-User.create!([
-  {email: "catlolcat@yahoo.com", encrypted_password: "$2a$10$J5hWkTAgIwXadDdsUs7wZecsnQ9WlM.SzPI/o7P03yK1tPZFjFZ2e", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 7, current_sign_in_at: "2014-05-23 10:40:27", last_sign_in_at: "2014-05-23 09:59:22", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", score: nil}
-])
+#User.create!([
+#  {email: "catlolcat@yahoo.com", encrypted_password: "$2a$10$J5hWkTAgIwXadDdsUs7wZecsnQ9WlM.SzPI/o7P03yK1tPZFjFZ2e", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 7, current_sign_in_at: "2014-05-23 10:40:27", last_sign_in_at: "2014-05-23 09:59:22", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", score: nil}
+#])
 Question.create!([
   {image: "http://images6.fanpop.com/image/photos/32200000/Cosette-Official-Movie-Poster-les-miserables-2012-movie-32280133-864-1280.jpg", q: "Les Miserables", a1: "Jaune d'Arc", a1s: 0, a2: "Javert", a2s: 0, a3: "Jean Valjean", a3s: 1, a4: "Jean d'Arc", a4s: 0},
   {image: "http://static.splashnology.com/articles/Impressive_Vector_Movie_Posters/memoirs_of_a_geisha.jpg", q: "Memoirs of a Geisha", a1: "Hatsumomo", a1s: 0, a2: "Sayuri", a2s: 1, a3: "Chio", a3s: 0, a4: "Satsuki", a4s: 0},

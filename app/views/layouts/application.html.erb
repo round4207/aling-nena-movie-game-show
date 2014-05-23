@@ -10,7 +10,12 @@
 <body>
 
 <%if user_signed_in?%>
-	<%= current_user.email %> Times Signed in: <%= current_user.sign_in_count %> <%=link_to "Log Out", destroy_user_session_path(user_session), :method => :delete, :class => "delete", :data => { :confirm => "Are you sure ?"}%>
+	<%if current_user.score.nil?%>
+		<%@score = Score.new%>
+		<%@score.user = current_user%>
+		<%@score.save!%>
+	<%end%>
+	<%= current_user.email %> Times Signed in: <%= current_user.sign_in_count %> <%=link_to "Log Out", destroy_user_session_path(user_session), :method => :delete, :class => "delete", :data => { :confirm => "Are you sure ?"}%> Score: <%=current_user.score.cscore%>
 <% else %>
 	<a href="/users/sign_in">Sign In</a>
 <% end %>
