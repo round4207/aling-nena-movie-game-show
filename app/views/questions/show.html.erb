@@ -1,0 +1,9 @@
+<%if @article.banner == "" %>
+	<img src="/assets/nigel.png"><br>
+<% else %>
+	<img src="<%=@article.banner%>"><br>
+<% end %>
+<h2><%= @article.title %></h2>
+<%= @article.content %><br><br>
+written by <%= @article.author %>, at <%= @article.published_at %> <br><br>
+<a href="/">Back to all articles</a>
