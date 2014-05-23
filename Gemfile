@@ -39,5 +39,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'rails_admin'
 gem 'devise'
-gem 'twitter-bootstrap-rails'
+# gem 'twitter-bootstrap-rails'
 gem 'cancan'
+# gem 'seed_dump'
