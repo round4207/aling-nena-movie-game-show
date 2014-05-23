@@ -40,3 +40,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'rails_admin'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
+gem 'cancan'
