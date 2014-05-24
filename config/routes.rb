@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'quiz1/index'
+
+  get 'quiz1/play'
+
+  post 'quiz1/results'
+
+  # SEPARATIIIIIIIIIIIING LIIIIIIIIIIINE
+
   get 'pages/index'
 
   get 'pages/about'

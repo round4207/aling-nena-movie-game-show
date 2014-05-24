@@ -1,0 +1,8 @@
+<h1>Quiz1#results</h1>
+<p>Find me in app/views/quiz1/results.html.erb</p>
+YOU GOT <%=@addscore%> POINT/S, YO
+<br>
+<br>
+<%if user_signed_in?%>
+	NOW Y'ALL HAVE <%= current_user.score.cscore %>
+<% end %>

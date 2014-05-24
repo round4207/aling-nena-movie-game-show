@@ -1,0 +1,24 @@
+<h1>Quiz1#play</h1>
+<p>Find me in app/views/quiz1/play.html.erb</p>
+<%= form_tag("/quiz1/results", method: "post") do%>
+<% @questions.each do |a| %>
+<img src="<%= a.image %>" style="width:50%;height:auto"><br>
+
+	<%= radio_button_tag(@number, a.a1s, :checked => true)%>
+	<%= label_tag(@number_a1s, a.a1) %><br>
+
+	<%= radio_button_tag(@number, a.a2s) %>
+	<%= label_tag(@number_a2s, a.a2) %><br>
+
+	<%= radio_button_tag(@number, a.a3s) %>
+	<%= label_tag(@number_a3s, a.a3) %><br>
+
+	<%= radio_button_tag(@number, a.a4s) %>
+	<%= label_tag(@number_a4s, a.a4) %><br>
+
+	<% @number = @number + 1 %>
+
+<% end %>
+	<%= submit_tag("DONE!") %>
+<% end %>
+</form>
