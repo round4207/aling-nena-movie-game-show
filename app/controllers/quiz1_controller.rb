@@ -17,7 +17,9 @@ class Quiz1Controller < ApplicationController
   			current_user.score.save!		
   		end
   	else
-  		@addscore += x.to_i  
+  		@array.each do |x|
+  			@addscore += x.to_i
+  		end  
   	end  	
   end
 end

@@ -1,6 +1,13 @@
 class QuestionsController < ApplicationController
+
+	load_and_authorize_resource
+	
 	def index
 		@questions = Question.all
+		@acount = 0
+		@bcount = 0
+		@ccount = 0
+		@dcount = 0
 	end
 
 	def new
