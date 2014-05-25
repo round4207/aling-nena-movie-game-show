@@ -2,7 +2,7 @@
 
 INSTEAD OF RUNNING rake db:migrate
 
-PLEASE RUN rake db:schema:load THEN rake db:seed IN ORDER TO POPULATE THE DATABASE.
+PLEASE RUN rake db:reset
 
 THANK YOU.
 
