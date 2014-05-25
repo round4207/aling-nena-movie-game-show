@@ -1,3 +1,169 @@
+body{
+	background-color: #DAE6FF;
+}
+h1{
+	color:#00008B;
+	font-family: "Lucida Sans", sans-serif;
+}
+h2{
+	color:#00008B;
+	font-family: "Lucida Sans", sans-serif;
+}
+.alert{
+	font-family: Calibri, sans-serif;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.alert-danger{
+	color:red;
+}
+.navbar{
+	background-color: #000066;
+	float:left;
+	width:102%;
+	margin: -10px 0px 0px -10px;
+	margin-top: -10px;
+	top: 0;
+}
+div #title{
+	color:#FFFFFF;
+	font-family: "Lucida Sans", sans-serif; /*FIND A BETTER FONT DAMMIT AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+	text-decoration:none;
+	width:40%;
+	font-size: 2em;
+	padding:15px 10px 15px 15px;
+	text-align: center;
+	float: left;
+	transition-duration: 0.2s;
+} 
+#title:hover{
+	background-color: #00002e;
+} 
+#title a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#details{
+	color:#FFFFFF;
+	font-family: Calibri, sans-serif;
+	font-size: 14px;
+	float: right;
+	text-decoration:none;
+	padding-top: 35px;
+	padding-right: 30px;
+}
+#details a
+{
+	color:#ffb280;
+}
+a{
+	text-decoration:none;
+}
+.instructions{
+  color: #00008B;
+  font-size:20px;
+  font-family: Calibri, sans-serif;
+  margin-left: 8px;
+  font-weight:bold;
+}
+
+label {
+  color: #00008B;
+  font-size: 20px;
+  margin-right:1em;
+  padding-top:1em;
+  text-align:right;
+  font-weight:bold;
+  }
+.quiz{
+ 	text-align: center;
+ }
+ .item{
+ 	width:800px;
+ 	margin-top: 50px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	display: inline-block;
+ 	padding-left: 100px;
+ }
+.poster{
+	font-size: 1.2em;
+	font-family: Calibri, sans-serif;
+	color: black;
+	display: inline-block;
+	float: left;
+	margin: 20px 0px 20px 0px;
+}
+.poster img{	
+	height: auto;
+	width: 350px;
+}
+.choices{
+	float: right;
+	width: 300px;
+	margin-left: 25px;
+	margin-right: 90px;
+	padding-top: 60px;
+}
+.option{
+	text-align: left;
+	margin-top: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	margin-bottom: auto;
+	font-family: Calibri, sans-serif;
+}
+.option:hover{
+	background-color: #8896B2;
+}
+.results{
+	color: #00008B;
+	font-size:20px;
+	font-family: Calibri, sans-serif;
+	margin-left: 8px;
+	font-weight:bold;
+	text-align: center;
+}
+.film{
+	float:right;
+	margin-right:15px;
+}
+.play_btn{
+	width: 15%;
+	height:20%;
+	display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.banner{
+	float:right;
+ 	margin-left:15px;
+}
+.caption{
+	text-align: center;
+	padding-top: 75px;
+	margin-bottom: -70px;
+}
+.take{
+	float:right;
+	margin-right:15px;
+	width:40%;
+	height:auto;
+
+}
+.submit{
+	text-decoration: none;
+	color: white;
+	background-color: #000066;
+	transition-duration:0.2s;
+	padding: 10px 20px;
+	font-family: Calibri, sans-serif;
+	font-size: 2em;
+}
+.submit:hover{
+	background-color: #00002e;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

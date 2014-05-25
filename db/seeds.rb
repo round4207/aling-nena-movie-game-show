@@ -1,3 +1,9 @@
+User.create!([
+  {email: "catlolcat@yahoo.com", password: "password", encrypted_password: "$2a$10$k9qqiJJLriU4pbGoYffx5OuvNZA4f4H/IBYy1yh1COTkk3zpbImQ2", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 17, current_sign_in_at: "2014-05-25 08:01:13", last_sign_in_at: "2014-05-24 08:06:59", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"},
+  {email: "hello@gmail.com", password: "password", encrypted_password: "$2a$10$3jh8CbrbZtAOdNF.S3xjLe8jBMvJOMUn0BIyfEzFWXYDyCk6oh0tq", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 10, current_sign_in_at: "2014-05-24 08:28:21", last_sign_in_at: "2014-05-24 07:32:40", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"},
+  {email: "nope@nope.com", password: "password", encrypted_password: "$2a$10$u4epSqoJSpWkUahfuNJggOr/vVJxwYZOSFcUfaafALOlFaf0csgiO", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 2, current_sign_in_at: "2014-05-24 04:43:50", last_sign_in_at: "2014-05-24 04:43:27", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"},
+  {email: "hihi@hihi.com", password: "password", encrypted_password: "$2a$10$fc8iPf3Lix7nI/GAdBtB2ezT3RNYtw1FP7PTB33SU404u5Y9Ixl2q", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 6, current_sign_in_at: "2014-05-24 07:55:03", last_sign_in_at: "2014-05-24 07:31:41", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"}
+])
 Question.create!([
   {image: "http://images6.fanpop.com/image/photos/32200000/Cosette-Official-Movie-Poster-les-miserables-2012-movie-32280133-864-1280.jpg", q: "Les Miserables", a1: "Jaune d'Arc", a1s: 0, a2: "Javert", a2s: 0, a3: "Jean Valjean", a3s: 1, a4: "Jean d'Arc", a4s: 0},
   {image: "http://static.splashnology.com/articles/Impressive_Vector_Movie_Posters/memoirs_of_a_geisha.jpg", q: "Memoirs of a Geisha", a1: "Hatsumomo", a1s: 0, a2: "Sayuri", a2s: 1, a3: "Chio", a3s: 0, a4: "Satsuki", a4s: 0},
@@ -17,10 +23,10 @@ Question.create!([
   {image: "http://www.freebestmovies.net/wp-content/uploads/2009/12/Elf-movie-poster.jpg", q: "Elf", a1: "Ron Swanson", a1s: 0, a2: "Timmy Porter", a2s: 0, a3: "Barry Tubbs", a3s: 0, a4: "Buddy Hobbs", a4s: 1},
   {image: "http://www.thatmoviesite.com/images/movie_posters/587.jpg", q: "Bee Movie", a1: "Barry Banson", a1s: 1, a2: "Bartholomew Biggs", a2s: 0, a3: "Brock Backford", a3s: 0, a4: "Bruce Bacon", a4s: 0},
   {image: "http://ecx.images-amazon.com/images/I/51q7cokzobL.jpg", q: "Enchanted", a1: "Ginebra", a1s: 0, a2: "Gertrude", a2s: 0, a3: "Giselle", a3s: 1, a4: "Gina", a4s: 0},
-  {image: "http://www.best-horror-movies.com/image-files/1408-horror-movie-poster-2.jpg", q: "1408", a1: "Martin Esquire", a1s: 0, a2: "Mike Wazowski", a2s: 0, a3: "Mark Morthal", a3s: 0, a4: "Mike Enslin", a4s: 1},
+  {image: "http://www.soundtrack-covers.com/images/1408-poster-big.jpg", q: "1408", a1: "Martin Esquire", a1s: 0, a2: "Mike Wazowski", a2s: 0, a3: "Mark Morthal", a3s: 0, a4: "Mike Enslin", a4s: 1},
   {image: "http://images.moviepostershop.com/it-movie-poster-1990-1010509183.jpg", q: "It", a1: "Krusty", a1s: 0, a2: "Pennywise", a2s: 1, a3: "Violent J", a3s: 0, a4: "Shaggy 2 Dope", a4s: 0},
   {image: "http://blog.solopress.com/wp-content/uploads/2012/10/poster-horror-movie-alien-solopress-printing.jpg", q: "Alien", a1: "Ellen Ripley", a1s: 1, a2: "Helen Parr", a2s: 0, a3: "Susan Strong", a3s: 0, a4: "Samus Aran", a4s: 0},
-  {image: "http://www.best-horror-movies.com/image-files/insidious-horror-movie-poster.jpg", q: "Insidious", a1: "Josh Nichols", a1s: 0, a2: "Josh Groban", a2s: 0, a3: "Josh Lambert", a3s: 1, a4: "Josh Peck", a4s: 0},
+  {image: "http://zuts.files.wordpress.com/2013/11/insidious-movie-poster.jpg", q: "Insidious", a1: "Josh Nichols", a1s: 0, a2: "Josh Groban", a2s: 0, a3: "Josh Lambert", a3s: 1, a4: "Josh Peck", a4s: 0},
   {image: "http://wac.450f.edgecastcdn.net/80450F/screencrush.com/files/2013/11/the-lego-movie-poster-full-photo.jpg", q: "The Lego Movie", a1: "Edward", a1s: 0, a2: "Elbert", a2s: 0, a3: "Manny", a3s: 0, a4: "Emmet", a4s: 1},
   {image: "http://wpc.556e.edgecastcdn.net/80556E/img.site/PH8pG6Tj2DPqbe_2_m.jpg", q: "I am Number Four", a1: "John Smith", a1s: 1, a2: "John Doe", a2s: 0, a3: "John Winchester", a3s: 0, a4: "John Egbert", a4s: 0},
   {image: "http://upload.wikimedia.org/wikipedia/en/a/af/Across_the_universe_(2007_film)_poster.jpg", q: "Across the Universe", a1: "Mark", a1s: 0, a2: "Jude", a2s: 1, a3: "Robert", a3s: 0, a4: "Flik", a4s: 0},
@@ -84,4 +90,13 @@ Question.create!([
   {image: "http://www.movieposter.com/posters/archive/main/15/b70-7814", q: "Wizard of Oz", a1: "Glenda Suder", a1s: 0, a2: "Dorothy Gale", a2s: 1, a3: "Chrome Zephyr", a3s: 0, a4: "Zelena Mills", a4s: 0},
   {image: "http://spinoff.comicbookresources.com/wp-content/uploads/2013/07/scarfaceposter.jpg", q: "Scarface", a1: "Tony Montana", a1s: 1, a2: "Al Capone", a2s: 0, a3: "Vito Corleone", a3s: 0, a4: "Don Cazzo", a4s: 0},
   {image: "http://img3.wikia.nocookie.net/__cb20140119124718/robocop/images/6/60/Robocop_2014_poster.jpg", q: "Robocop", a1: "Eddie Wilson", a1s: 0, a2: "Martin Riggs", a2s: 0, a3: "Alex Murphy", a3s: 1, a4: "Vince Murtaugh", a4s: 0}
+])
+Score.create!([
+  {cscore: 48, user_id: 1},
+  {cscore: 0, user_id: 1},
+  {cscore: 0, user_id: 1},
+  {cscore: 0, user_id: 1},
+  {cscore: 37, user_id: 2},
+  {cscore: 3, user_id: 3},
+  {cscore: 2, user_id: 4}
 ])

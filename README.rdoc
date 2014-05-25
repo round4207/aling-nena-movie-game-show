@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+INSTEAD OF RUNNING rake db:migrate
 
-Things you may want to cover:
+PLEASE RUN rake db:schema:load THEN rake db:seed IN ORDER TO POPULATE THE DATABASE.
 
-* Ruby version
+THANK YOU.
 
-* System dependencies
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Configuration
+FOR DEBUGGING PURPOSES, THE ADMIN LOGIN IS
 
-* Database creation
+E-mail: catlolcat@yahoo.com
 
-* Database initialization
+Password: cheesecake
 
-* How to run the test suite
+THANKS 4 READING <33333
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+(sir navarro, use the admin login then navigate to /questions in order to see the masterlist of questions)

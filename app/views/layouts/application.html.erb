@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gameshow</title>
+  <title>Aling Nena's Movie Game Show</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  
+  <link rel="shortcut icon" href="/assets/swirl.png">
   </head>
 <body>
-
-<%if user_signed_in?%>
-	<%if current_user.score.nil?%>
-		<%@score = Score.new%>
-		<%@score.user = current_user%>
-		<%@score.save!%>
-	<%end%>
-	<%= current_user.email %> Times Signed in: <%= current_user.sign_in_count %> <%=link_to "Log Out", destroy_user_session_path(user_session), :method => :delete, :class => "delete", :data => { :confirm => "Are you sure ?"}%> Score: <%=current_user.score.cscore%>
-<% else %>
-	<a href="/users/sign_in">Sign In</a>
-<% end %>
-<!--p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p-->
+<div class="navbar">
+  <div id="title"><a href="/pages/index">Aling Nena's Movie Game Show</a></div>
+  <div id="details">
+  <%if user_signed_in?%>
+  	<%if current_user.score.nil?%>
+  		<%@score = Score.new%>
+  		<%@score.user = current_user%>
+  		<%@score.save!%>
+  	<%end%>
+  	Signed in as: <b><%= current_user.email %></b>  |   Score: <b><%=current_user.score.cscore%></b>   |   <%=link_to "Log Out", destroy_user_session_path(user_session), :method => :delete, :class => "delete", :data => { :confirm => "Are you sure ?"}%>
+  <% else %>
+  	<a href="/users/sign_in">Sign In</a> | <a href="/users/sign_up">Sign Up</a>
+  <% end %>
+  </div>
+</div>
+<br>
  <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>
 <% if alert %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
+
 <%= yield %>
 
 </body>

@@ -3,7 +3,7 @@ class Quiz1Controller < ApplicationController
   end
 
   def play
-  	@questions = Question.first(30).sample(10)
+  	@questions = Question.all.sample(10)
   	@number = 0
   end
 

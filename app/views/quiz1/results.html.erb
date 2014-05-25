@@ -1,9 +1,15 @@
-<h1>Quiz1#results</h1>
-<p>Find me in app/views/quiz1/results.html.erb</p>
-YOU GOT <%=@addscore%> POINT/S, YO
 <br>
+<%=image_tag("take.png", :class => "take") %>
+<div class="results">
 <br>
+<h1>Congratulations!!!</h1>
+
+
+<p>YOU GOT <%=@addscore%> POINT/S, YO</p>
 <%if user_signed_in?%>
-	NOW Y'ALL HAVE <%= current_user.score.cscore %>
+<p>NOW Y'ALL HAVE <%= current_user.score.cscore %></p>
 <% end %>
-<a href="/">Back Home</a>
+<br>
+<h2>Ready for more?</h2>
+<%=link_to image_tag("play.png"), quiz1_play_path%>
+</div>

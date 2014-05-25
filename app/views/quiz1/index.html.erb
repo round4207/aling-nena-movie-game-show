@@ -1,3 +1,10 @@
-<h1>Quiz1#index</h1>
-<p>Find me in app/views/quiz1/index.html.erb</p>
-<%=link_to 'ARE YOU READY TO PLAY THE THING', quiz1_play_path%>
+<h1>Instructions</h1>
+<div class="instructions">
+<%=image_tag("film.png", :class => "film")%>
+<p id="first">This game consists of a 10 point quiz designed to test your knowledge on movies of the past and present.</p>
+<p>A movie poster will be diplayed in each number and all you have to do is to identify the main character of that movie among the choices provided.</p>
+<p>The more movies you get right the higher your score will be</p>
+<p>Signing-up is optional, however, if you want your scores to be saved for future use you are highly advised to sign-up.</p>
+<p>There are over 50+ questins in this game, play now and see how far you can go!</p>
+</div>
+<%=link_to image_tag("play.png", :class => "play_btn") , quiz1_play_path%>

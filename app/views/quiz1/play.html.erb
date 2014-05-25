@@ -1,24 +1,38 @@
-<h1>Quiz1#play</h1>
-<p>Find me in app/views/quiz1/play.html.erb</p>
+<div class="caption"><h1>Guess the Main Character!</h1></div>
+
+<div class="quiz">
 <%= form_tag("/quiz1/results", method: "post") do%>
 <% @questions.each do |a| %>
-<img src="<%= a.image %>" style="width:50%;height:auto"><br>
+	<div class="item">
+		<div class="poster">
+		<img src="<%= a.image %>"><br><%=a.q%>
+		</div>
+			<div class="choices">
 
-	<%= radio_button_tag(@number, a.a1s, :checked => true)%>
-	<%= label_tag(@number_a1s, a.a1) %><br>
+				
+				<div class="option"><%= radio_button_tag(@number, a.a1s, :checked => true,)%>
+				<%= label_tag(@number_a1s, a.a1, :value => a.a1s) %></div>
 
-	<%= radio_button_tag(@number, a.a2s) %>
-	<%= label_tag(@number_a2s, a.a2) %><br>
+				<div class="option"><%= radio_button_tag(@number, a.a2s) %>
+				<%= label_tag(@number_a2s, a.a2, :value => a.a2s) %></div>
 
-	<%= radio_button_tag(@number, a.a3s) %>
-	<%= label_tag(@number_a3s, a.a3) %><br>
+				<div class="option"><%= radio_button_tag(@number, a.a3s) %>
+				<%= label_tag(@number_a3s, a.a3, :value => a.a3s) %></div>
 
-	<%= radio_button_tag(@number, a.a4s) %>
-	<%= label_tag(@number_a4s, a.a4) %><br>
-
-	<% @number = @number + 1 %>
-
+				<div class="option"><%= radio_button_tag(@number, a.a4s) %>
+				<%= label_tag(@number_a4s, a.a4, :value => a.a4s) %></div>
+				
+			</div>
+				<% @number = @number + 1 %>
+	</div>
 <% end %>
-	<%= submit_tag("DONE!") %>
+<br>
+	<%= submit_tag("DONE!", :class => "submit") %>
 <% end %>
+<br>
+<br>
+<br>
+<br>
+<br>
 </form>
+</div>
